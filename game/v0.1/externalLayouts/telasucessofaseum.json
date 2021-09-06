@@ -1,0 +1,67 @@
+{
+  "associatedLayout": "faseUmGame",
+  "name": "telaSucessoFaseUm",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1520,
+      "layer": "",
+      "locked": true,
+      "name": "fundoOpcoes",
+      "persistentUuid": "41aedac9-d13d-4f00-8985-2ae083e9b15a",
+      "width": 720,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1290,
+      "layer": "",
+      "locked": false,
+      "name": "janelaOpcoes",
+      "persistentUuid": "19cc5fb8-0420-407e-a017-8140e77bff01",
+      "width": 700,
+      "x": 10,
+      "y": 220,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 260,
+      "layer": "",
+      "locked": false,
+      "name": "indFase",
+      "persistentUuid": "1aeb5e66-a9fc-4ef1-ab4c-5ec1e7f733c8",
+      "width": 250,
+      "x": 20,
+      "y": 70,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": true,
+    "gridB": 255,
+    "gridG": 180,
+    "gridHeight": 10,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridR": 158,
+    "gridWidth": 10,
+    "snap": true,
+    "windowMask": false,
+    "zoomFactor": 0.376
+  }
+}

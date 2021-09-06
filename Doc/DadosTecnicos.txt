@@ -1,0 +1,6 @@
+Dimensões finais elementos de jogo:
+Fase 1:
+Botões e letras da cuzadinha:
+60x60,691
+Pictogramas:
+64x64 px
