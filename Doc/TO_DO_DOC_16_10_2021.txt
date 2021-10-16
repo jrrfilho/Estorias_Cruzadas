@@ -1,0 +1,9 @@
+Status 16/10/2021
+TO DO LIST:
+- Incluir os vídeos como streaming e não mais como arquivo de mídia (https://www.youtube.com/watch?v=0AYTzQdpRHU)
+- Ajustar a tela de seleção de fase para modelo de mapa
+- Criar a tela de configuração
+- Criar a tela de mapa de seleção de fase (acesso pela tela principal)
+- Criar tela de seleção de video para assistir
+- Configurar vídeos liberados segundo fases completadas na tela de seleção de videos
+- Criar o Player de vídeos
