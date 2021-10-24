@@ -10,7 +10,7 @@
 This is a indie game for special children in literacy created
 
 **------------Actual Backlog Status------------**\
-_Last Update:_ september, 24th 2021\
+_Last Update:_ october, 24th 2021\
 _Bild Version: 11.10_21_\
 _Software Version: 0.1.11_\
 _Build State: Test_\
