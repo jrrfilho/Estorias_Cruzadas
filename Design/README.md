@@ -7,16 +7,16 @@ _Important:_ All files need to be imported on the GDevelop interface, this will 
 The Design folder is only for file editable image types and for historical.
 
 **_Fontes:_** Font files used  to create the interface. You can install it in your OS to use in image editor.\
-Remember to import the font into the project to use  it\
+Remember to import the font into the project to use  it
 
-**_Fundos:_** Screen background files.\
+**_Fundos:_** Screen background files.
 
-**_Icones:_** Game icon files\
+**_Icones:_** Game icon files
 
-**_Dados_Fases:_** This folder files all data used in each stage and main scene.\
+**_Dados_Fases:_** This folder files all data used in each stage and main scene.
 
-**_Referencia:_** Files used as reference for the project.\
+**_Referencia:_** Files used as reference for the project.
 
-**_Telas:_** Here are all editabe screens concept files used as scratch for the game project\
+**_Telas:_** Here are all editabe screens concept files used as scratch for the game project
 
 

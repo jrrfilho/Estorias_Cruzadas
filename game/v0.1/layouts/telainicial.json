@@ -13,20 +13,40 @@
   "v": 250,
   "uiSettings": {
     "grid": false,
-    "gridB": 255,
-    "gridG": 180,
+    "gridType": "rectangular",
+    "gridWidth": 30,
     "gridHeight": 30,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
-    "gridR": 158,
-    "gridType": "rectangular",
-    "gridWidth": 30,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
     "snap": false,
-    "windowMask": false,
-    "zoomFactor": 0.322
+    "zoomFactor": 0.322,
+    "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "volMusica",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "volFX",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "fasInicial",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "primAcesso",
+      "type": "string",
+      "value": ""
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -37,8 +57,8 @@
       "name": "btnJogar",
       "persistentUuid": "66e21b61-9f3c-4ccd-ae56-6bf8869bd9b6",
       "width": 0,
-      "x": 74,
-      "y": 1120,
+      "x": 109,
+      "y": 1195,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -219,6 +239,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "lyrBotoes",
+      "locked": false,
+      "name": "txtFaseAtual",
+      "persistentUuid": "59042ad4-a3ca-4765-8332-f32b18b656fd",
+      "width": 0,
+      "x": 196,
+      "y": 1283,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -228,6 +264,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -296,6 +333,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Tween",
@@ -369,6 +407,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Tween",
@@ -442,6 +481,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Tween",
@@ -515,6 +555,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Tween",
@@ -559,6 +600,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Tween",
@@ -603,6 +645,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Tween",
@@ -647,6 +690,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Tween",
@@ -691,6 +735,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Tween",
@@ -735,6 +780,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [
         {
           "name": "Tween",
@@ -779,6 +825,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -811,9 +858,336 @@
           ]
         }
       ]
+    },
+    {
+      "bold": false,
+      "italic": false,
+      "name": "txtFaseAtual",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Jogar Fase X",
+      "font": "Grandstander-VariableFont_wght.ttf",
+      "characterSize": 60,
+      "color": {
+        "b": 5,
+        "g": 117,
+        "r": 65
+      }
     }
   ],
   "events": [
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Consulta a base de dados do jogo",
+      "comment2": ""
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": [],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "LireFichierExp"
+          },
+          "parameters": [
+            "\"estoriascruzadas\"",
+            "\"primeiroacesso\"",
+            "",
+            "primAcesso"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "ModVarGlobal"
+          },
+          "parameters": [
+            "primAcesso",
+            "=",
+            "Variable(primAcesso)"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Realizar os ajstes necessários para o primeiro acesso (alerar o valor em armazenamento)",
+      "comment2": ""
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "primAcesso",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"estoriascruzadas\"",
+                "\"primeiroacesso\"",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"estoriascruzadas\"",
+                "\"volumeMusica\"",
+                "60"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"estoriascruzadas\"",
+                "\"volumeFX\"",
+                "80"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"estoriascruzadas\"",
+                "\"faseatual\"",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"estoriascruzadas\"",
+                "\"faseatual\"",
+                "",
+                "fasInicial"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "faseAtual",
+                "=",
+                "Variable(fasInicial)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "primAcesso",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"estoriascruzadas\"",
+                "\"volumeMusica\"",
+                "",
+                "volMusica"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"estoriascruzadas\"",
+                "\"volumeFX\"",
+                "",
+                "volFX"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"estoriascruzadas\"",
+                "\"faseatual\"",
+                "",
+                "fasInicial"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "volumeMusicas",
+                "=",
+                "Variable(volMusica)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "volumeFX",
+                "=",
+                "Variable(volFX)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "faseAtual",
+                "=",
+                "Variable(fasInicial)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::Opacity"
+              },
+              "parameters": [
+                "txtFaseAtual",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ]
+    },
     {
       "disabled": false,
       "folded": false,
@@ -856,7 +1230,7 @@
             "audio/telaInicial/musicaIntroducao.mp3",
             "1",
             "yes",
-            "60",
+            "GlobalVariable(volumeMusicas)",
             "1"
           ],
           "subInstructions": []
@@ -1222,6 +1596,30 @@
             "255"
           ],
           "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "TextObject::Opacity"
+          },
+          "parameters": [
+            "txtFaseAtual",
+            "=",
+            "255"
+          ],
+          "subInstructions": []
+        },
+        {
+          "type": {
+            "inverted": false,
+            "value": "TextObject::String"
+          },
+          "parameters": [
+            "txtFaseAtual",
+            "=",
+            "\"Jogar Fase \"+ GlobalVariableString(faseAtual)"
+          ],
+          "subInstructions": []
         }
       ],
       "events": []
@@ -1254,7 +1652,7 @@
           "parameters": [
             "primAcesso",
             "=",
-            "1"
+            "0"
           ],
           "subInstructions": []
         }
@@ -1297,23 +1695,7 @@
           "subInstructions": []
         }
       ],
-      "events": [
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Esses são os eventos referentes ao botão iniciar no primeiro acesso ao jogo",
-          "comment2": ""
-        }
-      ]
+      "events": []
     },
     {
       "disabled": false,
@@ -1379,7 +1761,7 @@
                 "audio/efeitos_sonoros/btnClick.mp3",
                 "2",
                 "",
-                "",
+                "GlobalVariable(volumeFX)",
                 ""
               ],
               "subInstructions": []
@@ -1391,8 +1773,53 @@
               },
               "parameters": [
                 "",
-                "\"telaSelecaoFase\"",
+                "\"fase_\"+GlobalVariableString(faseAtual)",
                 "yes"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "btnConfig",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PushScene"
+              },
+              "parameters": [
+                "",
+                "\"telaPause\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "PauseMusicCanal"
+              },
+              "parameters": [
+                "",
+                "1"
               ],
               "subInstructions": []
             }
@@ -1414,7 +1841,7 @@
           "parameters": [
             "primAcesso",
             "=",
-            "1"
+            "0"
           ],
           "subInstructions": []
         }
@@ -1453,6 +1880,56 @@
             "btnVideos",
             "=",
             "0"
+          ],
+          "subInstructions": []
+        }
+      ],
+      "events": []
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Ajuste de músocas e efeitos FX na retomada da cena após uma tela de pause",
+      "comment2": ""
+    },
+    {
+      "disabled": false,
+      "folded": false,
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "SceneJustResumed"
+          },
+          "parameters": [
+            ""
+          ],
+          "subInstructions": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "inverted": false,
+            "value": "PlayMusicCanal"
+          },
+          "parameters": [
+            "",
+            "audio/telaInicial/musicaIntroducao.mp3",
+            "1",
+            "yes",
+            "GlobalVariable(volumeMusicas)",
+            "1"
           ],
           "subInstructions": []
         }

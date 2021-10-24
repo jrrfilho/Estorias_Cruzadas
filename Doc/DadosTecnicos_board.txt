@@ -1,0 +1,24 @@
+canais de audio:
+MUSICA - 1
+FX     - 2
+FALA   - 3
+
+Z-Index
+FUNDO            - 0xx
+ELEMENTOS DESIGN - 1xx
+CRUZADINHA       - 2xx
+BOTÕES           - 3xx
+
+Variáveis Globais:
+faseAtual: padrão 0
+volumeMusicas: padrão 60
+volumeFx: padrão 80
+primAcesso: padrão 0
+
+LOCAL STORAGE (VARIÁVEIS GLOBAIS):
+Armazenamento: estoriascruzadas
+primeiroacesso (primAcesso)
+volumeMusica (volumeMusicas)
+volumeFX (volumeFx)
+faseatual (faseAtual)
+

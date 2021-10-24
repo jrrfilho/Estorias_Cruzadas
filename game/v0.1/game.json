@@ -11,10 +11,10 @@
     "folderProject": true,
     "orientation": "default",
     "packageName": "com.betomassud.estoriascruzadas",
+    "pixelsRounding": false,
     "projectUuid": "f5bc0afe-3b0a-4ed8-a8d9-1aa4f98d7a8d",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
-    "useDeprecatedZeroAsDefaultZOrder": true,
     "useExternalSourceFiles": false,
     "version": "0.0.1",
     "name": "Estórias Cruzadas",
@@ -54,9 +54,29 @@
       "ios-icon-87": ""
     },
     "loadingScreen": {
-      "showGDevelopSplash": true
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
     },
-    "extensionProperties": [],
+    "authorIds": [],
+    "extensionProperties": [
+      {
+        "extension": "Firebase",
+        "property": "FirebaseConfig",
+        "value": ""
+      }
+    ],
     "platforms": [
       {
         "name": "GDevelop JS platform"
@@ -1477,6 +1497,204 @@
         "name": "btnJogar_Inicio.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ligado.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ligado.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ligando_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ligando_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ligando_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ligando_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ligando_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ligando_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ligando_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ligando_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ligado2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ligado2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "desligando_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "desligando_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "desligando_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "desligando_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "desligando_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "desligando_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "desligando_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "desligando_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "desligado.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "desligado.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "area_audio.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "area_audio.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "area_audio2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "area_audio2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "musica_on.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "musica_on.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "musica_off.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "musica_off.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "fx_on.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "fx_on.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "fx_off.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "fx_off.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "btnSobre.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "btnSobre.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "btn_salvar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "btn_salvar.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "btn_cancelar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "btn_cancelar.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "desligado2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "desligado2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ligado3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ligado3.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1499,6 +1717,7 @@
           "value": ""
         }
       ],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -2434,6 +2653,7 @@
           "value": ""
         }
       ],
+      "effects": [],
       "behaviors": [
         {
           "name": "Draggable",
@@ -3218,6 +3438,7 @@
           "value": ""
         }
       ],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -4166,6 +4387,7 @@
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
+      "effects": [],
       "behaviors": [],
       "animations": [
         {
@@ -4220,7 +4442,27 @@
     {
       "name": "primAcesso",
       "type": "string",
-      "value": "1"
+      "value": "0"
+    },
+    {
+      "name": "build",
+      "type": "string",
+      "value": "10"
+    },
+    {
+      "name": "buildVersion",
+      "type": "string",
+      "value": "10.10_21"
+    },
+    {
+      "name": "dtaBuid",
+      "type": "string",
+      "value": "16/10/2021"
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "value": "0.1.10 Alpha"
     }
   ],
   "layouts": [
@@ -4231,6 +4473,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/telaselecaofase"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/fase_2"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
