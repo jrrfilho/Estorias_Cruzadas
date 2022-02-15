@@ -21,7 +21,7 @@
     "author": "Beto Massud",
     "windowWidth": 720,
     "windowHeight": 1520,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "/mnt/27652e57-8406-407f-b42b-1bc714117b0c/BETO/POS_GRADUACAO/PROJETO_INTEGRADO/ENTREGA_1",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -1693,6 +1693,51 @@
         "kind": "image",
         "metadata": "",
         "name": "ligado3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "btnFase2_ATIVO.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "btnFase2_ATIVO.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "btnFase2_ATIVO2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "btnFase2_ATIVO2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "btnFase3_ATIVO.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "btnFase3_ATIVO.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "btnFase4_ATIVO.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "btnFase4_ATIVO.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "btnFase5_ATIVO.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "btnFase5_ATIVO.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -4484,7 +4529,7 @@
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/telapause"
+      "referenceTo": "/layouts/telaconfiguracao"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
